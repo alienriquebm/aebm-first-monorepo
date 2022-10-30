@@ -1,4 +1,9 @@
 import Head from 'next/head';
+import styled from 'styled-components';
+
+const StyledTest = styled.div`
+  color: ${({ theme }) => theme.colors.primary500};
+`;
 
 export default function Home() {
   return (
@@ -9,7 +14,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div>esto es el index</div>
+      <StyledTest>esto es el index</StyledTest>
     </div>
   );
 }
