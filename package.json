@@ -8,6 +8,7 @@
   "scripts": {
     "front:dev": "turbo run dev --filter=@aebm-monorepo/front",
     "back:dev": "turbo run start --filter=@aebm-monorepo/back",
+    "front:storybook": "turbo run storybook --filter=@aebm-monorepo/front",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "test": "turbo run test",
