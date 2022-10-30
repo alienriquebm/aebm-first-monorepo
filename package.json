@@ -5,6 +5,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "front:dev": "turbo run dev --filter=@aebm-monorepo/front",
+    "back:dev": "turbo run start --filter=@aebm-monorepo/back",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint"
+  },
   "devDependencies": {
     "turbo": "^1.6.2"
   }
